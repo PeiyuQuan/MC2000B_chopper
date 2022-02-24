@@ -1,0 +1,1 @@
+device(lsi,INST_IO,devMC2000BVersion,"MC2000B version")

@@ -1,0 +1,6 @@
+record(lsi, "$(user):MC2000B:version") {
+    field(DTYP, "MC2000B version")
+    field(DESC, "Version string")
+    field(SIZV, "$(SIZV=200)")
+    field(PINI, "YES")
+}

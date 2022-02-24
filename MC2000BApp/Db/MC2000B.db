@@ -1,0 +1,253 @@
+record(longin,"$(P)readreferfreq")
+	{
+		field(DESC,"get reference frenquency")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readreferfreq $(PORT)")
+		field(SCAN,"1 second")
+	}
+
+record(longout,"$(P)setfreq")
+	{
+		field(DESC,"set frequency")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setfreq $(PORT)")
+	}
+  
+record(longin,"$(P)readfreq")
+	{
+		field(DESC,"get frequency")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readfreq $(PORT)")
+		field(SCAN, "1 second")
+	}
+	
+record(longin,"$(P)readrefoutfreq")
+	{
+		field(DESC,"Get ref-out frequency")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readrefoutfreq $(PORT)")
+		field(SCAN,"1 second")
+	}
+
+record(mbbo,"$(P)setbladetype")
+	{
+		field(DESC,"set blade type")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setbladetype $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(FRVL,"4")
+		field(FVVL,"5")
+		field(SXVL,"6")
+		field(SVVL,"7")
+		field(EIVL,"8")
+		field(NIVL,"9")
+		field(TEVL,"10")
+		field(ELVL,"11")
+		field(TVVL,"12")
+		field(TTVL,"13")
+		field(FTVL,"14")
+		field(ZRST,"MC1F2")
+		field(ONST,"MC1F10")
+		field(TWST,"MC1F15")
+		field(THST,"MC1F30")
+		field(FRST,"MC1F60")
+		field(FVST,"MC1F100")
+		field(SXST,"MC1F10HP")
+		field(SVST,"MC1F2P10")
+		field(EIST,"MC1F6P10")
+		field(NIST,"MC1F10A")
+		field(TEST,"MC2F330")
+		field(ELST,"MC2F47")
+		field(TVST,"MC2F57B")
+		field(TTST,"MC2F860")
+		field(FTST,"MC2F5360")
+	}
+  
+record(mbbi,"$(P)readbladetype")
+	{
+		field(DESC,"read blade type")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readbladetype $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(FRVL,"4")
+		field(FVVL,"5")
+		field(SXVL,"6")
+		field(SVVL,"7")
+		field(EIVL,"8")
+		field(NIVL,"9")
+		field(TEVL,"10")
+		field(ELVL,"11")
+		field(TVVL,"12")
+		field(TTVL,"13")
+		field(FTVL,"14")
+		field(ZRST,"MC1F2")
+		field(ONST,"MC1F10")
+		field(TWST,"MC1F15")
+		field(THST,"MC1F30")
+		field(FRST,"MC1F60")
+		field(FVST,"MC1F100")
+		field(SXST,"MC1F10HP")
+		field(SVST,"MC1F2P10")
+		field(EIST,"MC1F6P10")
+		field(NIST,"MC1F10A")
+		field(TEST,"MC2F330")
+		field(ELST,"MC2F47")
+		field(TVST,"MC2F57B")
+		field(TTST,"MC2F860")
+		field(FTST,"MC2F5360")
+		field(SCAN,"1 second")
+	}
+	
+record(longout,"$(P)setharmulti")
+	{
+		field(DESC,"Set harmonic multiplier")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setharmulti $(PORT)")
+		field(HOPR,"15")
+		field(LOPR,"1")
+	}
+
+record(longin,"$(P)readharmulti")
+	{
+		field(DESC,"get harmonic Divider")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readharmulti $(PORT)")
+		field(HOPR,"15")
+		field(LOPR,"1")
+		field(SCAN,"1 second")
+	}
+
+record(longout,"$(P)sethardivid")
+	{
+		field(DESC,"Set harmonic Divider")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto sethardivid $(PORT)")
+		field(HOPR,"15")
+		field(LOPR,"1")
+	}
+	
+record(longin,"$(P)readhardivid")
+	{
+		field(DESC,"read harmonic Divider")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readhardivid $(PORT)")
+		field(HOPR,"15")
+		field(LOPR,"1")
+		field(SCAN,"1 second")
+	}
+	
+record(longout,"$(P)setphase")
+	{
+		field(DESC,"Set phase")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setphase $(PORT)")
+		field(HOPR,"15")
+		field(LOPR,"1")
+	}
+	
+record(longin,"$(P)readphase")
+	{
+		field(DESC,"read phase")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readphase $(PORT)")
+		field(HOPR,"15")
+		field(LOPR,"1")
+		field(SCAN,"1 second")
+	}
+
+record(bo,"$(P)setenable")
+	{
+		field(DESC,"set enable")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setenable $(PORT)")
+		field(ZNAM,"disabled")
+		field(ONAM,"enabled")
+	}
+	
+record(bi,"$(P)readenable")
+	{
+		field(DESC,"read enable")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readenable $(PORT)")
+		field(ZNAM,"disabled")
+		field(ONAM,"enabled")
+		field(SCAN,"1 second")
+	}
+
+record(ao,"$(P)setoncycle")
+	{
+		field(DESC,"set on cycle")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setoncycle $(PORT)")
+		field(HOPR,"50")
+		field(LOPR,"1")
+	}
+	
+record(ai,"$(P)readoncycle")
+	{
+		field(DESC,"read on cycle")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readoncycle $(PORT)")
+		field(HOPR,"50")
+		field(LOPR,"1")
+		field(PREC,"6")
+		field(SCAN,"1 second")
+	}
+
+
+record(longout,"$(P)setdisplayinten")
+	{
+		field(DESC,"set display intensity")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setdisplayinten $(PORT)")
+		field(HOPR,"10")
+		field(LOPR,"1")
+	}
+	
+record(longin,"$(P)readdisplayinten")
+	{
+		field(DESC,"read display intensity")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readdisplayinten $(PORT)")
+		field(HOPR,"10")
+		field(LOPR,"1")
+		field(SCAN,"1 second")
+	}
+
+record(longout,"$(P)setrefoutput")
+	{
+		field(DESC,"set ref output")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setrefoutput $(PORT)")
+	}
+	
+record(longin,"$(P)readrefoutput")
+	{
+		field(DESC,"read ref output")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readrefoutput $(PORT)")
+		field(SCAN,"1 second")
+	}
+
+record(longout,"$(P)setrefer")
+	{
+		field(DESC,"set reference")
+		field(DTYP,"stream")
+		field(OUT,"@MC2000B.proto setrefer $(PORT)")
+	}
+	
+record(longin,"$(P)readrefer")
+	{
+		field(DESC,"read reference")
+		field(DTYP,"stream")
+		field(INP,"@MC2000B.proto readrefer $(PORT)")
+		field(SCAN,"1 second")
+	}
+
+	

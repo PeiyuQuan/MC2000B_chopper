@@ -1,0 +1,34 @@
+setfreq {out "freq=%d";}
+readfreq {out "freq?";in "freq?"; in "%d";}
+
+readrefoutfreq {out "refoutfreq?";in "refoutfreq?"; in "%d";}
+
+setbladetype {out "blade=%d";}
+readbladetype {out "blade?"; in "blade?"; in "%d";}
+
+setharmulti {out "nharmonic=%d";}
+readharmulti {out "nharmonic?"; in "nharmonic?"; in "%d";}
+
+sethardivid {out "dharmonic=%d";}
+readhardivid {out "dharmonic?";in "dharmonic?"; in "%d";}
+
+setphase {out "phase=%d";}
+readphase {out "phase?";in "phase?"; in "%d";}
+
+setenable {out "enable=%d";}
+readenable {out "enable?";in "enable?"; in "%d";}
+
+setrefer {out "ref=%d";}
+readrefer {out "ref?"; in "ref?"; in "%d";}
+
+setrefoutput {out "output=%d";}
+readrefoutput {out "output?"; in "output?"; in "%d";}
+
+setoncycle {out "oncycle=%f";}
+readoncycle {out "oncycle?"; in "oncycle?"; in "%f";}
+
+setdisplayinten {out "intensity=%d";}
+readdisplayinten {out "intensity?"; in "intensity?"; in "%d";}
+
+readreferfreq {out "input?"; in "input?"; in "%d";}
+
