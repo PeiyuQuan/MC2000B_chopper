@@ -24,8 +24,8 @@ readrefer {out "ref?"; in "ref?"; in "%d";}
 setrefoutput {out "output=%d";}
 readrefoutput {out "output?"; in "output?"; in "%d";}
 
-setoncycle {out "oncycle=%f";}
-readoncycle {out "oncycle?"; in "oncycle?"; in "%f";}
+setoncycle {out "oncycle=%d";}
+readoncycle {out "oncycle?"; in "oncycle?"; in "%d";}
 
 setdisplayinten {out "intensity=%d";}
 readdisplayinten {out "intensity?"; in "intensity?"; in "%d";}
