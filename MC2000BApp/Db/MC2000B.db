@@ -235,18 +235,34 @@ record(longin,"$(P)readrefoutput")
 		field(SCAN,"1 second")
 	}
 
-record(longout,"$(P)setrefer")
+record(mbbo,"$(P)setrefer")
 	{
 		field(DESC,"set reference")
 		field(DTYP,"stream")
 		field(OUT,"@MC2000B.proto setrefer $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(ZRST,"INT-OUTER")
+		field(ONST,"INT-INNER")
+		field(TWST,"EXT-OUTER")
+		field(THST,"EXT-INNER")
 	}
 	
-record(longin,"$(P)readrefer")
+record(mbbi,"$(P)readrefer")
 	{
 		field(DESC,"read reference")
 		field(DTYP,"stream")
 		field(INP,"@MC2000B.proto readrefer $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(ZRST,"INT-OUTER")
+		field(ONST,"INT-INNER")
+		field(TWST,"EXT-OUTER")
+		field(THST,"EXT-INNER")
 		field(SCAN,"1 second")
 	}
 
