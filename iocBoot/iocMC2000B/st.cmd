@@ -33,14 +33,8 @@ dbLoadRecords ("${TOP}/MC2000BApp/Db/MC2000B.db", "P=$(PREFIX), PORT=serial1")
 dbLoadRecords ("$(ASYN)/db/asynRecord.db", "P=$(PREFIX), R=asyn1, PORT=serial1, ADDR=0, IMAX=80, OMAX=80")
 dbLoadRecords ("$(AUTOSAVE)/db/save_restoreStatus.db", "P=SLAC:MC2000B:")
 dbLoadRecords ("$(SSCAN)/db/scan.db", "P=$(PREFIX),MAXPTSI=2000,MAXPTS2=200,MAXPTS3=20,MAXPTS4=10,MAXPTSH=10")
-#- Set this to see messages from mySub
-#var mySubDebug 1
 
-#- Run this to trace the stages of iocInit
-#traceIocInit
 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
 
-## Start any sequence programs
-#seq sncExample, "user=quan"
