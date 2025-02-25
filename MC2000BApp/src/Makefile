@@ -55,7 +55,6 @@ MC2000B_DBD += drvAsynSerialPort.dbd
 MC2000B_DBD += calc.dbd
 MC2000B_DBD += stream-scalcout.dbd
 MC2000B_DBD += stream.dbd
-MC2000B_DBD += as.dbd
 MC2000B_DBD += asSupport.dbd
 
 # MC2000B_registerRecordDeviceDriver.cpp derives from MC2000B.dbd
