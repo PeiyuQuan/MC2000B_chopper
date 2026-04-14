@@ -53,7 +53,7 @@ MC2000B_DBD += asyn.dbd
 MC2000B_DBD += drvAsynIPPort.dbd
 MC2000B_DBD += drvAsynSerialPort.dbd
 MC2000B_DBD += calc.dbd
-MC2000B_DBD += stream-scalcout.dbd
+#MC2000B_DBD += stream-scalcout.dbd
 MC2000B_DBD += stream.dbd
 MC2000B_DBD += asSupport.dbd
 
